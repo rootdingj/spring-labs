@@ -16,11 +16,22 @@ import java.util.Map;
  */
 @ConfigurationProperties(prefix = "person")
 @Component
+//@Validated
 public class Person {
+    /**
+     * <bean class="Person">
+     *      <property name="lastName" value="字面量/${key}从环境变量、配置文件中获取值/#{SpEL}"></property>
+     * <bean/>
+     */
+
+    //lastName必须是邮箱格式
+    // @Email
+    //@Value("${person.last-name}")
     private String lastName;
     private int age;
     private boolean boss;
     private Date birth;
+    //@Value("${person.maps}")
     private Map<String, Object> maps;
     private List<Object> lists;
     private Dog dog;
