@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
-<!--        <spring-boot.version>1.4.0.RELEASE</spring-boot.version>-->
+<!--        <spring-boot.version>2.6.13</spring-boot.version>-->
     </properties>
     <dependencies>
         <!-- Spring web 场景启动器 -->
@@ -39,7 +39,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>RELEASE</version>
@@ -50,7 +50,7 @@
             <artifactId>testng</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
-        </dependency>-->
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
